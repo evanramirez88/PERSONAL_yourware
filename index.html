@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youware App</title>
-    <script type="application/json" id="yw-manifest-data">{"ai_config":{"code_generator":{"model":"deepseek-v3","temperature":0.3,"maxTokens":8000,"system_prompt":"You are an expert software engineer. Generate clean, efficient, and well-documented code based on user requirements. Language: ${language}. Framework: ${framework}."},"code_explainer":{"model":"gemini-2.5-pro","temperature":0.5,"maxTokens":4000,"system_prompt":"You are a code educator. Explain code clearly and concisely, highlighting key concepts and best practices."},"code_reviewer":{"model":"openai-gpt-4o","temperature":0.4,"maxTokens":4000,"system_prompt":"You are a senior code reviewer. Analyze code for quality, performance, security, and best practices. Provide constructive feedback."},"chat_assistant":{"model":"claude-4-sonnet","temperature":0.7,"maxTokens":4000,"system_prompt":"You are a helpful AI coding assistant. Assist users with coding questions, debugging, and project planning."}}}</script><script src="https://lib.youware.com/youware-lib-editor.1760171868.js" id="yourware-lib"></script><script type="module" crossorigin src="/assets/index--1VUP0-R.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-ByyaTwLX.css">
+    <title>YouWare Personal Coding Agent</title>
   </head>
-  <body>
+  <body class="bg-youware-bg">
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
