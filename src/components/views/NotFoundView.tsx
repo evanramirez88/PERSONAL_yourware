@@ -8,8 +8,8 @@ const NotFoundView = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#f6f4f1] text-[rgba(0,0,0,0.95)] flex flex-col font-[yourwareSans]">
-      <header className="flex items-center gap-2 h-24 px-6">
+    <div className="min-h-screen bg-[#f6f4f1] text-[rgba(0,0,0,0.95)] flex flex-col font-[yourwareSans] overflow-x-hidden leading-[1.2]">
+      <header className="flex items-center gap-2 px-6 py-4">
         <img
           src="https://www.youware.com/icons/logo.svg"
           alt="YOUWARE Logo"
@@ -19,8 +19,8 @@ const NotFoundView = () => {
         <p className="text-base font-medium">YouWare</p>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-24 text-center">
-        <h1 className="text-[clamp(4rem,12vw,8rem)] font-normal leading-none">404</h1>
+      <main className="flex-1 flex flex-col items-center justify-center px-6 pb-[120px] text-center">
+        <h1 className="text-[clamp(5rem,16vw,8rem)] font-normal leading-none">404</h1>
         <h2 className="mt-3 text-[clamp(1.75rem,4vw,2.5rem)] font-medium leading-tight">
           Oops, something went wrong!
         </h2>
@@ -30,7 +30,7 @@ const NotFoundView = () => {
         <button
           type="button"
           onClick={handleReload}
-          className="mt-12 sm:mt-16 inline-flex items-center justify-center rounded-2xl bg-[#55644a] text-white font-medium text-sm sm:text-base px-8 sm:px-10 py-3 sm:py-4 shadow-md transition hover:bg-[#445039]"
+          className="mt-12 sm:mt-16 md:mt-20 inline-flex h-[48px] w-[144px] sm:h-[56px] sm:w-[160px] items-center justify-center rounded-2xl bg-[#55644a] text-white font-medium text-sm sm:text-base transition hover:bg-[#445039]"
         >
           Reload
         </button>
