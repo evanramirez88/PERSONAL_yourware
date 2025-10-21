@@ -3,6 +3,26 @@
 @tailwind utilities;
 
 :root {
+  font-family: 'yourwareSans', system-ui, sans-serif;
+}
+
+@font-face {
+  font-family: 'yourwareSans';
+  src: url('https://www.youware.com/fonts/youware-sans/youware-sans-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'yourwareSans';
+  src: url('https://www.youware.com/fonts/youware-sans/youware-sans-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
   color: rgba(24, 24, 24, 0.92);
   background-color: #f6f4f1;
   font-synthesis: none;
