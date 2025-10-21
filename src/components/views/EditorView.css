@@ -1,0 +1,80 @@
+.editor-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.editor-view__controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-items: end;
+}
+
+.editor-view__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editor-view__field--wide {
+  grid-column: span 2;
+}
+
+.editor-view__field textarea,
+.editor-view__field select {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid rgba(31, 54, 61, 0.12);
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.editor-view__generate {
+  align-self: flex-start;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #55644a, #1f363d);
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.editor-view__error {
+  color: #b3261e;
+}
+
+.editor-view__result {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  border: 1px solid rgba(31, 54, 61, 0.08);
+  padding: 16px;
+}
+
+.editor-view__console {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.editor-view__runtime {
+  font-size: 0.85rem;
+  color: rgba(31, 54, 61, 0.7);
+}
+
+.editor-view__placeholder {
+  color: rgba(31, 54, 61, 0.7);
+}
+
+@media (max-width: 960px) {
+  .editor-view__controls {
+    grid-template-columns: 1fr;
+  }
+
+  .editor-view__field--wide {
+    grid-column: span 1;
+  }
+}

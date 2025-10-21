@@ -1,0 +1,38 @@
+.code-editor {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(31, 54, 61, 0.08);
+  overflow: hidden;
+}
+
+.code-editor__toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(31, 54, 61, 0.04);
+}
+
+.code-editor__label {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: rgba(31, 54, 61, 0.8);
+}
+
+.code-editor__run {
+  border: none;
+  border-radius: 999px;
+  padding: 6px 18px;
+  background: linear-gradient(135deg, #55644a, #1f363d);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.code-editor__run:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

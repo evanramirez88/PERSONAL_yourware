@@ -1,0 +1,81 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.settings__card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(31, 54, 61, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings__card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings__badge {
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  background: rgba(31, 54, 61, 0.08);
+}
+
+.settings__badge--ok {
+  background: rgba(85, 100, 74, 0.15);
+  color: #55644a;
+}
+
+.settings__badge--error {
+  background: rgba(179, 38, 30, 0.1);
+  color: #b3261e;
+}
+
+.settings__card input {
+  border-radius: 12px;
+  border: 1px solid rgba(31, 54, 61, 0.12);
+  padding: 12px;
+  font-family: inherit;
+}
+
+.settings__card footer {
+  display: flex;
+  gap: 12px;
+}
+
+.settings__card button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #55644a, #1f363d);
+  color: white;
+  cursor: pointer;
+}
+
+.settings__clear {
+  background: rgba(31, 54, 61, 0.08) !important;
+  color: rgba(31, 54, 61, 0.9) !important;
+}
+
+.settings__meta {
+  font-size: 0.8rem;
+  color: rgba(31, 54, 61, 0.65);
+}
+
+@media (max-width: 960px) {
+  .settings__grid {
+    grid-template-columns: 1fr;
+  }
+}
